@@ -42,8 +42,8 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
-          name: dist-files
+          name: dist_files
       - name: Output artifact files list
-        run: ls dist-files
+        run: ls dist_files
       - name: Deploy
         run: echo "Deploying..."
