@@ -30,6 +30,10 @@ jobs:
         with:
           name: dist_files
           path: dist
+          # an alternative way is to specify multiple file path's :
+          # path: |
+          #dist
+          #package.json
 
   deploy:
     needs: build
