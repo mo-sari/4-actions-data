@@ -43,7 +43,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist_files
+          #after download github will automaticaly extract files so there is only
+          #the content( in this case there is no dist or dist_files)
       - name: Output artifact files list
-        run: ls dist_files
+        run: ls
       - name: Deploy
         run: echo "Deploying..."
